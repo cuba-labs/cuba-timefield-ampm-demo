@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://caption"
+        messagesPack="com.company.sample.web.screens">
+    <layout>
+        <hbox spacing="true">
+            <groupBox spacing="true" caption="TimeField">
+                <timeField id="timeField"/>
+
+                <label id="timeFieldValue"/>
+                <button id="tfTimeMode"
+                        caption="Change TimeMode"/>
+            </groupBox>
+            <groupBox spacing="true" caption="DateField">
+                <dateField id="dateField"/>
+
+                <label id="dateFieldValue"/>
+                <button id="dfTimeMode"
+                        caption="Change TimeMode"/>
+            </groupBox>
+        </hbox>
+    </layout>
+</window>
