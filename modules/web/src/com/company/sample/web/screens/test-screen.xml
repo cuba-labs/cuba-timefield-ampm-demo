@@ -10,6 +10,8 @@
                 <label id="timeFieldValue"/>
                 <button id="tfTimeMode"
                         caption="Change TimeMode"/>
+                <button id="setTfValue"
+                        caption="Set 13:45"/>
             </groupBox>
             <groupBox spacing="true" caption="DateField">
                 <dateField id="dateField"/>
@@ -17,6 +19,8 @@
                 <label id="dateFieldValue"/>
                 <button id="dfTimeMode"
                         caption="Change TimeMode"/>
+                <button id="setDfValue"
+                        caption="Set 13:45"/>
             </groupBox>
         </hbox>
     </layout>

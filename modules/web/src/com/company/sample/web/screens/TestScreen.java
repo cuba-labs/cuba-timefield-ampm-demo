@@ -7,6 +7,7 @@ import com.haulmont.cuba.gui.screen.UiController;
 import com.haulmont.cuba.gui.screen.UiDescriptor;
 
 import javax.inject.Inject;
+import java.util.Calendar;
 import java.util.Date;
 
 @UiController("sample_TestScreen")
@@ -47,5 +48,25 @@ public class TestScreen extends Screen {
                 ? TimeField.TimeMode.H_24
                 : TimeField.TimeMode.H_12;
         dateField.setTimeMode(timeMode);
+    }
+
+    @Subscribe("setTfValue")
+    public void onSetTfValueClick(Button.ClickEvent event) {
+        Calendar cal = Calendar.getInstance();
+
+        cal.set(Calendar.HOUR, 13);
+        cal.set(Calendar.MINUTE, 45);
+
+        timeField.setValue(cal.getTime());
+    }
+
+    @Subscribe("setDfValue")
+    public void onSetDfValueClick(Button.ClickEvent event) {
+        Calendar cal = Calendar.getInstance();
+
+        cal.set(Calendar.HOUR, 13);
+        cal.set(Calendar.MINUTE, 45);
+
+        dateField.setValue(cal.getTime());
     }
 }
