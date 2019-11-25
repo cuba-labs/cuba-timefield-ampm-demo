@@ -54,7 +54,7 @@ public class TestScreen extends Screen {
     public void onSetTfValueClick(Button.ClickEvent event) {
         Calendar cal = Calendar.getInstance();
 
-        cal.set(Calendar.HOUR, 13);
+        cal.set(Calendar.HOUR_OF_DAY, 13);
         cal.set(Calendar.MINUTE, 45);
 
         timeField.setValue(cal.getTime());
@@ -64,7 +64,7 @@ public class TestScreen extends Screen {
     public void onSetDfValueClick(Button.ClickEvent event) {
         Calendar cal = Calendar.getInstance();
 
-        cal.set(Calendar.HOUR, 13);
+        cal.set(Calendar.HOUR_OF_DAY, 13);
         cal.set(Calendar.MINUTE, 45);
 
         dateField.setValue(cal.getTime());
